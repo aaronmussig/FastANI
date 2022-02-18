@@ -1,0 +1,33 @@
+{
+  "tagFormat": "v${version}",
+  "branches": ["main"],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/exec",
+      {
+        "verifyReleaseCmd": "sed -i \"s/.*__version__.*/__version__ = '${nextRelease.version}'/g\" fastani/__init__.py"
+      }
+    ],
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md"
+      }
+    ],
+  [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "CHANGELOG.md",
+          "fastani/__init__.py"
+        ],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ],
+    [
+      "@semantic-release/github"
+    ]
+  ]
+}
