@@ -1,6 +1,6 @@
 # FastANI
 
-![PyPI](https://img.shields.io/pypi/v/fastani)
+[![PyPI](https://img.shields.io/pypi/v/fastani)](https://pypi.python.org/pypi/fastani)
 
 
 This package has been developed to provide a Python interface to the
