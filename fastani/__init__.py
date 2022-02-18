@@ -1,4 +1,4 @@
-__title__ = 'FastANI'
+__title__ = 'fastani'
 __description__ = 'A wrapper to the FastANI program.'
 __url__ = 'https://github.com/aaronmussig/FastANI'
 __version__ = '1.0.0'

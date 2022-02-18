@@ -1,5 +1,8 @@
 # FastANI
 
+![PyPI](https://img.shields.io/pypi/v/fastani)
+
+
 This package has been developed to provide a Python interface to the
 [FastANI](https://github.com/ParBLiSS/FastANI) tool.
 
