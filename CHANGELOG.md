@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/aaronmussig/FastANI/compare/v1.0.1...v1.1.0) (2022-03-02)
+
+
+### Features
+
+* **tqdm:** Add tqdm progressbar to execution. ([86fe0d8](https://github.com/aaronmussig/FastANI/commit/86fe0d8849d023c1c2c08bea5c7623c7fb6769d7))
+
 ## [1.0.1](https://github.com/aaronmussig/FastANI/compare/v1.0.0...v1.0.1) (2022-02-18)
 
 
