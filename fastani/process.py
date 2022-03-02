@@ -5,6 +5,8 @@ import tempfile
 from multiprocessing import Pool
 from typing import Optional, Collection, Tuple, Dict
 
+from tqdm import tqdm
+
 from fastani.model import FastANIParameters, FastANIExecution
 from fastani.model import write_genome_list
 
@@ -69,4 +71,4 @@ def process_queue(params: FastANIParameters, queue) -> Tuple[FastANIExecution]:
         params.cpus = 1
         mp_queue = [(params, item) for item in queue]
         with Pool(processes=mp_cpus) as pool:
-            return tuple(pool.imap_unordered(execute_mp_wrapper, mp_queue))
+            return tuple(tqdm(pool.imap_unordered(execute_mp_wrapper, mp_queue), total=len(mp_queue)))

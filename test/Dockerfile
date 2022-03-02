@@ -59,3 +59,4 @@ RUN wget "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/873/845/GCA_001873845
     mv "GCA_002789105.1_ASM278910v1_genomic.fna.gz" "GCA_002789105.1.fna.gz" && \
     mv "GCA_001886815.1_ASM188681v1_genomic.fna.gz" "GCA_001886815.1.fna.gz"
 
+RUN python -m pip install -U tqdm
